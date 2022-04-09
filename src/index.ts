@@ -6,6 +6,6 @@ const playwright = require('playwright');
   const context = await browser.newContext();
   const page = await context.newPage();
   await page.goto('https://zhanghao.zone');
-  await page.pdf({ path: `document.pdf` });
+  await page.pdf({ path: `pdf/document.pdf` });
   await browser.close();
 })();
